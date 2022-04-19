@@ -1,0 +1,41 @@
+body{
+    background-color: darkcyan;
+}
+/* 
+
+*/
+.game-screen {
+    width: 600px;
+    height: 600px;
+    padding: 10px;
+    border: 5px solid black;
+    margin: auto;
+    text-align: center;
+    background-color: darkgreen;
+  }
+
+.players{
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+
+.players .player-1{
+    position: relative;
+    text-align: center;
+    display: block;
+    margin:auto;
+    width: 45px;
+    height: 45px;
+}
+.player-2{
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-left:auto;
+    margin-top: 250px;
+    width: 45px;
+    height: 45px;
+}
