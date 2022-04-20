@@ -91,3 +91,4 @@ function start(){
         emptyHand(i)
     }
 }
+//there are 52 cards

@@ -14,28 +14,38 @@ body{
     background-color: darkgreen;
   }
 
-.players{
-    position: relative;
-    text-align: center;
-    display: block;
-    width: 45px;
-    height: 45px;
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.players .player-1{
+.mid{
+    width: 32%;
+    padding-bottom: 32%; 
+    margin-bottom: 2%; 
     position: relative;
-    text-align: center;
-    display: block;
-    margin:auto;
-    width: 45px;
-    height: 45px;
+}
+.player-1 {
+    width: 32%;
+    padding-bottom: 32%; 
+    margin-bottom: 2%; 
+    position: relative;
 }
 .player-2{
+    width: 32%;
+    padding-bottom: 32%; 
+    margin-bottom: 2%; 
     position: relative;
-    text-align: center;
-    display: block;
-    margin-left:auto;
-    margin-top: 250px;
-    width: 45px;
-    height: 45px;
+}
+.player-3{
+    width: 32%;
+    padding-bottom: 32%; 
+    margin-bottom: 2%; 
+    position: relative;
+}.player-4{
+    width: 32%;
+    padding-bottom: 32%; 
+    margin-bottom: 2%; 
+    position: relative;
 }

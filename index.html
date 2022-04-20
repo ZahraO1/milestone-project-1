@@ -9,15 +9,45 @@
     <title>Go Fish</title>
 </head>
 <body>
+    <!-- 
+        middle ==> cards
+        top, bottom, left, and right are players
+        each player has:
+        ==>an icon for player
+        ==>name
+        ==>area to put cards
+        ==>main player has go fish button
+        ==>main player also has an area to show text what's happening
+     -->
     <div class="game-screen">
         Game screen
         <div class="players">
-            <div class="player-1">
-                Player 1
+            <div class="mid"></div>
+            <div class="player-4">
+                Player 4
+                <img src="" alt="icon">
+                <div class="player-4-cards">Player 4 Cards</div>
             </div>
+            <div class="mid"></div>
             <div class="player-2">
+                <div class="player-2-cards">Player 2 Cards</div>
+                <img src="" alt="icon">
                 Player 2
             </div>
+            <div class="mid" id="deck">Deck goes here</div>
+            <div class="player-3">
+                <div class="player-3-cards">Player 3 Cards</div>
+                <img src="" alt="icon">
+                Player 3
+            </div>
+            <div class="mid"></div>      
+            <div class="player-1">
+                <div class="player-1-cards">Player 1 Cards</div>
+                <img src="" alt="icon">
+                <button>Go Fish</button>
+                Player 1 - Tis you
+            </div>
+            <div class="mid"></div>
         </div>
     </div>
 </body>
