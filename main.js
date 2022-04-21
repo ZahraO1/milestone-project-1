@@ -92,3 +92,13 @@ function start(){
     }
 }
 //there are 52 cards
+//need to create an element for each card --> or use 52 images
+//keep the cards centered --> how to make it so that the cards move to make sure they're centered
+//need animations for that 
+//need animations to show cards moving from deck to player hands
+//each card should have a back and front face --> opponents hide their cards
+//==> when opponents show cards, the front face will be shown
+//display the wordings in the center, top left and bottom right of card
+
+//first start with displaying cards --> getting information on the cards seems a bit easier after that
+//middle deck can display how many cards are in the deck
