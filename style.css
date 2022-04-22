@@ -22,7 +22,7 @@ body{
 
 .mid{
     width: 32%;
-    padding-bottom: 32%; 
+    padding-bottom: 15%; 
     margin-bottom: 2%; 
     position: relative;
     border: 1px solid black;
@@ -31,7 +31,7 @@ body{
 
 .player-divs{
     width: 32%;
-    padding-bottom: 32%; 
+    padding-bottom: 15%; 
     margin-bottom: 2%; 
     position: relative;
     border: 1px solid black;
@@ -44,7 +44,7 @@ body{
     display: flex;
     flex-direction: column;
     background-image: url(./images/card-back.png);
-    background-size: 80% 80%;
+    background-size: 50% 80%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -64,4 +64,36 @@ body{
     height: 45px;
     width:45px;
     margin:auto;
+    position: absolute;
+    top:auto;
+}
+.cards{
+    border: 1.5px solid white;
+    position: absolute;
+    top: 45%;
+    left:10%;
+    width: 30%;
+    height: 50%;
+    border-radius: .5em;
+    background-image: url(./images/card-back.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.go-fish-button{
+    position:absolute;
+    width:50%;
+    left:25%;
+    top:27%;
+}
+
+.show-cards{
+    border:1.5px solid black;
+    border-radius: .5rem;
+    background-color: white;
+    position:absolute;
+    left:52%;
+    top:45%;
+    width:30%;
+    height: 50%;
 }
