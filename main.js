@@ -1,6 +1,6 @@
 //Go fish
 //assign a number to cards [52] --> put them all in array
-const suits = ['spades','clubs','hearts','diamonds']
+const suits = ['♠','♣','♥','♦']
 const numbers = [
     'A',
     '2',
@@ -90,6 +90,30 @@ function start(){
     for(let i = 0; i < playerDeck.length; i++){
         emptyHand(i)
     }
+    updateDecks()
+}
+
+function updateDecks(){
+    document.getElementById("deck").textContent = cards.length
+
+    //document.getElementById("player-1-value").textContent = playerDeck[0].length
+    document.getElementById("player-2-value").textContent = playerDeck[1].length
+    document.getElementById("player-3-value").textContent = playerDeck[2].length
+    document.getElementById("player-4-value").textContent = playerDeck[3].length
+
+    document.getElementById("card-1").textContent=playerDeck[0][0]
+    document.getElementById("card-2").textContent=playerDeck[0][1]
+    document.getElementById("card-3").textContent=playerDeck[0][2]
+    document.getElementById("card-4").textContent=playerDeck[0][3]
+    document.getElementById("card-5").textContent=playerDeck[0][4]
+    document.getElementById("card-6").textContent=playerDeck[0][5]
+    document.getElementById("card-7").textContent=playerDeck[0][6]
+    document.getElementById("card-8").textContent=playerDeck[0][7]
+    document.getElementById("card-9").textContent=playerDeck[0][8]
+    document.getElementById("card-10").textContent=playerDeck[0][9]
+    document.getElementById("card-11").textContent=playerDeck[0][10]
+    document.getElementById("card-12").textContent=playerDeck[0][11]
+    document.getElementById("card-13").textContent=playerDeck[0][12]
 }
 //there are 52 cards
 //need to create an element for each card --> or use 52 images
@@ -102,3 +126,7 @@ function start(){
 
 //first start with displaying cards --> getting information on the cards seems a bit easier after that
 //middle deck can display how many cards are in the deck
+
+//need a function for turns and timing
+//==> since there are 4 players, index 0,1,2,3
+//
