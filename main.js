@@ -65,6 +65,15 @@ function reset(){
         player.splice(0,player.length)
     })
     cards.splice(0,cards.length)
+    updateDecks()
+    for(let i = 0; i < player1cards.length;i++){
+        player1cards[i].style.display = "none"
+    }
+    document.getElementById("deck").textContent = ""
+
+    document.getElementById("player-2-value").textContent = ""
+    document.getElementById("player-3-value").textContent = ""
+    document.getElementById("player-4-value").textContent = ""
 }
 
 //if a player is said to go fish, they draw
@@ -72,6 +81,8 @@ function drawCard(inDeck){
     if (cards.length != 0){
         playerDeck[inDeck].push(cards.pop())
     }
+    updateDecks()
+    createReset()
 }
 //if a player hand is empty --> they are handed 5 cards from the deck
 function emptyHand(inDeck){
@@ -80,6 +91,7 @@ function emptyHand(inDeck){
             drawCard(inDeck)
         }
     }
+    updateDecks()
 }
 //start function
 function start(){
@@ -91,30 +103,65 @@ function start(){
         emptyHand(i)
     }
     updateDecks()
+    createReset()
 }
 
 function updateDecks(){
     document.getElementById("deck").textContent = cards.length
 
-    //document.getElementById("player-1-value").textContent = playerDeck[0].length
     document.getElementById("player-2-value").textContent = playerDeck[1].length
     document.getElementById("player-3-value").textContent = playerDeck[2].length
     document.getElementById("player-4-value").textContent = playerDeck[3].length
 
-    document.getElementById("card-1").textContent=playerDeck[0][0]
-    document.getElementById("card-2").textContent=playerDeck[0][1]
-    document.getElementById("card-3").textContent=playerDeck[0][2]
-    document.getElementById("card-4").textContent=playerDeck[0][3]
-    document.getElementById("card-5").textContent=playerDeck[0][4]
-    document.getElementById("card-6").textContent=playerDeck[0][5]
-    document.getElementById("card-7").textContent=playerDeck[0][6]
-    document.getElementById("card-8").textContent=playerDeck[0][7]
-    document.getElementById("card-9").textContent=playerDeck[0][8]
-    document.getElementById("card-10").textContent=playerDeck[0][9]
-    document.getElementById("card-11").textContent=playerDeck[0][10]
-    document.getElementById("card-12").textContent=playerDeck[0][11]
-    document.getElementById("card-13").textContent=playerDeck[0][12]
+    cardsArray();
+    let x = 0;
+    let y = 0;
+    for(let i = 0; i < playerDeck[0].length;i++){
+        player1cards[i].textContent = playerDeck[0][i]
+        x = -(46*i)
+        y = -(101.5*i)
+        player1cards[i].style.left =""+x+"%";
+        player1cards[i].style.top = `${y}%`;
+        player1cards[i].style.display = "block";
+    }
+
 }
+var player1cards = []
+function cardsArray(){
+    player1cards[0] = document.getElementById("card-1")
+    player1cards[1] = document.getElementById("card-2")
+    player1cards[2] = document.getElementById("card-3")
+    player1cards[3] = document.getElementById("card-4")
+    player1cards[4] = document.getElementById("card-5")
+    player1cards[5] = document.getElementById("card-6")
+    player1cards[6] = document.getElementById("card-7")
+    player1cards[7] = document.getElementById("card-8")
+    player1cards[8] = document.getElementById("card-9")
+    player1cards[9] = document.getElementById("card-10")
+    player1cards[10] = document.getElementById("card-11")
+    player1cards[11] = document.getElementById("card-12")
+    player1cards[12] = document.getElementById("card-13")
+}
+
+function createReset(){
+    var deck = document.getElementById("deck")
+    var resetButton = document.createElement("button")
+    resetButton.textContent = "Reset"
+    resetButton.style.backgroundColor = "purple";
+    resetButton.style.width = "30%";
+    resetButton.style.alignSelf = "center"
+    resetButton.style.position = "relative"
+    resetButton.style.top = "175%"
+    resetButton.style.color = "white";
+    deck.appendChild(resetButton);
+    resetButton.addEventListener("click",reset)
+}
+
+function createStart(){
+    
+}
+
+
 //there are 52 cards
 //need to create an element for each card --> or use 52 images
 //keep the cards centered --> how to make it so that the cards move to make sure they're centered

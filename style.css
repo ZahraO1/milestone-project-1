@@ -56,18 +56,16 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     color:white;
-    vertical-align: bottom;
-    justify-content:end;
 }
 
-.start-button{
+.button{
     background-color: blue;
     color: white;
     position: absolute;
-    top: 45%;
+    top: 70%;
     left: 25%;
     width: 50%;
-    height: 10%;
+    height: 15%;
 }
 
 
@@ -94,11 +92,13 @@ body{
 #player-1-cards,#player-1-show{
     width:21%;
 }
+#player-1-show{
+    left: 80%;
+}
 #player-1-cards{
     background-image: none;
-    background-color:aliceblue;
     border: 1px solid black;
-    left:1%;
+    left:55%;
 }
 li{
     border:1px solid black;
@@ -107,12 +107,16 @@ li{
     float: left;
     display: block;
     border-radius: .5rem;
+    background-color: rgba(238, 176, 238, 0.671);
+    overflow: hidden;
+    text-align:right;
+    position: relative;
+    display: none;
 }
 ul{
     list-style-type: none;
     margin:0;
     padding: 0;
-   /*  overflow: hidden; */
 }
 
 .go-fish-button{
