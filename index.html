@@ -22,12 +22,12 @@
     <div class="game-screen">
         <div class="players">
             <div class="mid"></div>
-            <div class="player-divs"id="player-4">
-                <h3>Player 4</h3>
-                <img class="player-icon" src="./images/icons8-whale-48.png" alt="whale icon">
-                <div class="cards"id="player-4-cards"></div>
-                <div class="show-cards" id="player-4-show">Show cards</div>
-                <p class="show-number" id="player-4-value"></p>
+            <div class="player-divs"id="player-3">
+                <h3>Player 3</h3>
+                <img class="player-icon" src="./images/icons8-seahorse-48.png" alt="seahorse icon">
+                <div class="cards"id="player-3-cards"></div>
+                <div class="show-cards" id="player-3-show">Show cards</div>
+                <p class="show-number" id="player-3-value"></p>
             </div>
             <div class="mid"></div>
             <div class="player-divs" id="player-2">
@@ -40,12 +40,12 @@
             <div class="mid" id="deck">
                 <button class="button"id="start-button" onclick="start()">Start</button>
             </div>
-            <div class="player-divs"id="player-3">
-                <h3>Player 3</h3>
-                <img class="player-icon" src="./images/icons8-seahorse-48.png" alt="seahorse icon">
-                <div class="cards"id="player-3-cards"></div>
-                <div class="show-cards" id="player-3-show">Show cards</div>
-                <p class="show-number" id="player-3-value"></p>
+            <div class="player-divs"id="player-4">
+                <h3>Player 4</h3>
+                <img class="player-icon" src="./images/icons8-whale-48.png" alt="whale icon">
+                <div class="cards"id="player-4-cards"></div>
+                <div class="show-cards" id="player-4-show">Show cards</div>
+                <p class="show-number" id="player-4-value"></p>
             </div>
             <div class="mid-player" id="player-1-left"></div>      
             <div class="player-divs"id="player-1">
@@ -53,19 +53,19 @@
                 <h3>Player 1</h3>
                 <button class="go-fish-button" onclick="drawCard(0)">Go Fish</button>
                 <ul class="cards"id="player-1-cards">
-                    <li id="card-1"></li>
-                    <li id="card-2"></li>
-                    <li id="card-3"></li>
-                    <li id="card-4"></li>
-                    <li id="card-5"></li>
-                    <li id="card-6"></li>
-                    <li id="card-7"></li>
-                    <li id="card-8"></li>
-                    <li id="card-9"></li>
-                    <li id="card-10"></li>
-                    <li id="card-11"></li>
-                    <li id="card-12"></li>
-                    <li id="card-13"></li>
+                    <li id="card-1" onclick = "cardsClick(0)"></li>
+                    <li id="card-2" onclick = "cardsClick(1)"></li>
+                    <li id="card-3" onclick = "cardsClick(2)"></li>
+                    <li id="card-4" onclick = "cardsClick(3)"></li>
+                    <li id="card-5" onclick = "cardsClick(4)"></li>
+                    <li id="card-6" onclick = "cardsClick(5)"></li>
+                    <li id="card-7" onclick = "cardsClick(6)"></li>
+                    <li id="card-8" onclick = "cardsClick(7)"></li>
+                    <li id="card-9" onclick = "cardsClick(8)"></li>
+                    <li id="card-10" onclick = "cardsClick(9)"></li>
+                    <li id="card-11" onclick = "cardsClick(10)"</li>
+                    <li id="card-12" onclick = "cardsClick(11)"></li>
+                    <li id="card-13" onclick = "cardsClick(12)"></li>
                 </ul>
 
                 <p class="show-number" id="player-1-value"></p>             

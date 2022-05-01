@@ -25,7 +25,6 @@ body{
     padding-bottom: 15%; 
     margin-bottom: 2%; 
     position: relative;
-    border: 1px solid black;
 
 }
 
@@ -44,7 +43,6 @@ body{
 }
 .mid-player{
     width: 15%;
-    border: 1px solid black;
 }
 
 
@@ -54,8 +52,9 @@ body{
     background-image: url(./images/card-back.png);
     background-size: 50% 80%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     color:white;
+    background-color: black;
 }
 
 .button{
@@ -66,8 +65,8 @@ body{
     left: 25%;
     width: 50%;
     height: 15%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 
 .player-icon{
     height: 45px;
@@ -89,6 +88,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
+
 #player-1-cards,#player-1-show{
     width:21%;
 }
@@ -107,7 +107,7 @@ li{
     float: left;
     display: block;
     border-radius: .5rem;
-    background-color: rgba(238, 176, 238, 0.671);
+    background-color: rgba(238, 176, 238, 0.85);
     overflow: hidden;
     text-align:right;
     position: relative;
@@ -121,30 +121,36 @@ ul{
 
 .go-fish-button{
     position:absolute;
-    width:50%;
-    left:25%;
-    top:27%;
+    background-color: aquamarine;
+    height: 1.5em;
+    width: 30%;
+    left: 35%;
+    top:25%;
+    font-size: larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .show-cards{
     border:1.5px solid black;
     border-radius: .5rem;
-    background-color: aliceblue;
+    background-color: rgb(0, 136, 255);
     position:absolute;
     left:60%;
     top:45%;
     width:30%;
     height: 50%;
+    z-index: -1;
 }
 
 .show-number{
     position:absolute;
     left:18%;
     top:40%;
-    color: white;
+    color: aliceblue;
 }
 
 .player-divs p,.mid{
     font-size: 2em;
 }
+
 
